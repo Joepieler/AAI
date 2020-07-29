@@ -28,7 +28,7 @@ def fitness(individual, target_sum, target_mult):
   :param target_mult: the mult that we ar aiming for
   """
   sum = abs(reduce(add, [i + 1 for i, pipe in enumerate(individual) if pipe == 0], 0) - 36)
-  mult = abs(reduce(mul, [i + 1 for i, pipe in enumerate(individual) if pipe == 1], 0) - 360)
+  mult = abs(reduce(mul, [i + 1 for i, pipe in enumerate(individual) if pipe == 1], 1) - 360)
   return abs(target_sum - sum) + abs(target_mult - mult)
 
 

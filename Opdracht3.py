@@ -160,7 +160,7 @@ syn0 = 2 * np.random.random((4, 4)) - 1
 syn1 = 2 * np.random.random((4, 3)) - 1
 
 #training
-for i in range(1000000):
+for i in range(10000):
 
   #layers
   layer0 = input

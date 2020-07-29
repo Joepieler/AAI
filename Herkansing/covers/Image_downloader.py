@@ -6,7 +6,7 @@ DataSet = "BX-Books.csv"
 
 links =  np.genfromtxt(DataSet, delimiter=";", usecols=(0), loose=False, invalid_raise=False, dtype=str)
 
-for i in range(51747, len(links)):
+for i in range(104315, len(links)):
     r = requests.get(links[i], stream = True)
     if r.status_code == 200:
         # Set decode_content value to True, otherwise the downloaded image file's size will be zero.
