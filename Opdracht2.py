@@ -105,9 +105,6 @@ def elbow(dataset, max_k):
 if __name__ == "__main__":
 
   '''Create labels for Training data'''
-  labelsTrainingData = []
-  trainingData = Setup.datesReader(dataSet)
-  Setup.addLabels(trainingData, labelsTrainingData)
   trainingData = Setup.dataReader(dataSet)
 
   norm = False
